@@ -27,3 +27,20 @@
         window.removeEventListener("keydown", onEscPress);
       }
 
+
+
+  // Знаходимо елементи
+  const openMenuBtn = document.querySelector('.btn-burger.btn-res');
+  const closeMenuBtn = document.querySelector('.mobile-menu__close-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  // Відкриття меню
+  openMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('is-open');
+  });
+
+  // Закриття меню
+  closeMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
+
